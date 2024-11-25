@@ -1,0 +1,5 @@
+Flask==3.0.0
+python-docx==1.0.0
+openpyxl==3.1.2
+requests==2.31.0
+lxml==4.9.3

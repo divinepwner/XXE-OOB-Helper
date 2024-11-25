@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XXE Test File Generator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">XXE Tester</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/vulnerable">Test Page</a>
+                <a class="nav-link" href="/about">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Create Test File</h2>
+        <form action="/create_file" method="post" class="mt-4">
+            <div class="mb-3">
+                <label class="form-label">File Type:</label>
+                <select name="file_type" class="form-select">
+                    <option value="docx">DOCX</option>
+                    <option value="xlsx">XLSX</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Callback URL:</label>
+                <input type="text" name="callback" class="form-control" placeholder="your-callback-server" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Generate File</button>
+        </form>
+    </div>
+</body>
+</html>
+
