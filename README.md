@@ -12,8 +12,8 @@ Web-UI also has a feature to test your created document if it is abusing vulnera
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/document-processing-api.git
-cd document-processing-api
+git clone https://github.com/divinepwner/XXE-OOB-Helper.git
+cd XXE-OOB-Helper
 ```
 
 2. Create and activate virtual environment:
